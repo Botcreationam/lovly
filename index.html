@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>For You ❤️</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@0;1&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(135deg, #ffb6c1, #ffd1dc);
+      font-family: 'Playfair Display', serif;
+      color: #5a1a2c;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      text-align: center;
+    }
+
+    .letter {
+      background: rgba(255, 255, 255, 0.85);
+      padding: 40px;
+      border-radius: 20px;
+      max-width: 600px;
+      box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+      animation: fadeIn 2s ease;
+    }
+
+    h1 {
+      font-size: 2.6em;
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-size: 1.3em;
+      line-height: 1.6;
+    }
+
+    .buttons {
+      margin-top: 30px;
+    }
+
+    button {
+      padding: 14px 30px;
+      margin: 10px;
+      font-size: 1em;
+      border: none;
+      border-radius: 30px;
+      cursor: pointer;
+      transition: transform 0.2s ease;
+    }
+
+    .yes {
+      background: #ff4d6d;
+      color: white;
+    }
+
+    .no {
+      background: #bbb;
+      color: #333;
+    }
+
+    button:hover {
+      transform: scale(1.05);
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Background music -->
+  <audio autoplay loop>
+    <source src="https://www.bensound.com/bensound-music/bensound-romantic.mp3" type="audio/mpeg">
+  </audio>
+
+  <div class="letter">
+    <h1>My Dearest ❤️</h1>
+
+    <p>
+      From the moment you walked into my life,  
+      something changed inside me.  
+      The world softened. Time slowed.  
+      And somehow, everything felt right.
+    </p>
+
+    <p>
+      <strong>ONYXX❤️🥺</strong>,  
+      this isn’t just a Valentine’s message —  
+      it’s me choosing you,  
+      with intention, with care, and with a full heart.
+    </p>
+
+    <p>
+      So here I am, asking honestly…
+    </p>
+
+    <h2>Will you be my Valentine? 💖</h2>
+
+    <div class="buttons">
+      <button class="yes" onclick="yesClicked()">Yes 💕</button>
+      <button class="no" onclick="noClicked()">No 🙈</button>
+    </div>
+  </div>
+
+  <script>
+    function yesClicked() {
+      document.body.innerHTML = `
+        <div style="
+          display:flex;
+          align-items:center;
+          justify-content:center;
+          height:100vh;
+          background: linear-gradient(135deg, #ff758c, #ff7eb3);
+          color:white;
+          font-family:'Playfair Display', serif;
+          text-align:center;
+          padding:40px;">
+          <div>
+            <h1>🥹❤️</h1>
+            <h1>You just made me the happiest person</h1>
+            <p style="font-size:1.4em;">
+              I promise to choose you,  
+              respect you,  
+              and love you deeply.
+            </p>
+          </div>
+        </div>
+      `;
+    }
+
+    function noClicked() {
+      alert("Haha 😅 you can't say no that easily… try again 💖");
+    }
+  </script>
+
+</body>
+</html>
